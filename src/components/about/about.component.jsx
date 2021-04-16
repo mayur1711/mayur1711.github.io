@@ -2,10 +2,10 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import "./about.styles.css";
-import Profile from "../../assets/img/profile/profile.webp";
 import Image from "react-bootstrap/Image";
 import Button from "react-bootstrap/Button";
+import Profile from "../../assets/img/profile/profile.jpg";
+import "./about.styles.css";
 
 const AboutComponent = () => {
   return (
@@ -22,12 +22,13 @@ const AboutComponent = () => {
                   src={Profile}
                   thumbnail
                   fluid
+                  rounded
                 />
               </Row>
             </Col>
             <Col xs={12} md={6}>
               <Row className=" align-items-start p-2 my-details rounded">
-                Hi there! I am <strong>&nbsp;Anand Kumar Jha</strong>
+                Hi there! I am <strong>&nbsp;Mayur Mule</strong>
                 <br />A passionate programmer and a Coach, born and brought up
                 in India. I am a Full Stack Web Developer with React.js, Redux,
                 Express.js, Node.js, and PostgreSQL as my tech stack.

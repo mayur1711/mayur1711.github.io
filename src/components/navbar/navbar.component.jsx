@@ -1,39 +1,69 @@
 import React from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import Logo from "../../assets/icons/logow.png";
-import "./navbar.styles.css";
+import styled from "styled-components";
+import Scrollspy from "react-scrollspy";
 
-const NavBarComponent = () => {
+const StyledDiv = styled.div`
+  nav {
+    font-size: 20px;
+    background-color: #212121;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 50%);
+    animation: move-down 0.5s ease-in-out;
+  }
+
+  a {
+    margin: 0 10px;
+    color: #fff;
+  }
+
+  @keyframes move-down {
+    from {
+      transform: translateY(-5rem);
+    }
+    to {
+      transform: translateY(0rem);
+    }
+  }
+`;
+
+const NavbarComponent = () => {
   return (
-    <div>
-      <Navbar
-        fixed="top"
-        variant="dark"
-        expand="md"
-        className="animate-navbar nav-theme justify-content-between"
-      >
-        <div>
-          <Navbar.Brand href="#home">
-            <img className="logo" src={Logo} alt="" />
-          </Navbar.Brand>
-        </div>
-        <div>
+    <div id="navbar">
+      <StyledDiv>
+        <Navbar
+          fixed="top"
+          variant="dark"
+          expand="md"
+          className={`justify-content-between`}
+        >
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="mr-auto ">
+            <Scrollspy
+              items={[
+                "home",
+                "about",
+                "skills",
+                "experience",
+                "projects",
+                "contact",
+              ]}
+              currentClassName="active"
+              className="navbar-nav m-auto"
+              componentTag="div"
+            >
               <Nav.Link href="#home">Home</Nav.Link>
               <Nav.Link href="#about">About</Nav.Link>
               <Nav.Link href="#skills">Skills</Nav.Link>
               <Nav.Link href="#experience">Experience</Nav.Link>
               <Nav.Link href="#projects">Projects</Nav.Link>
               <Nav.Link href="#contact">Contact</Nav.Link>
-            </Nav>
+            </Scrollspy>
           </Navbar.Collapse>
-        </div>
-      </Navbar>
+        </Navbar>
+      </StyledDiv>
     </div>
   );
 };
 
-export default NavBarComponent;
+export default NavbarComponent;

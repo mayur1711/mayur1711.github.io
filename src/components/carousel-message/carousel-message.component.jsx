@@ -46,7 +46,7 @@ const CarouselMessageComponent = () => (
           <Typewriter
             options={{
               strings: [
-                "Web Developer",
+                "Full Stack Developer",
                 "SharePoint Developer",
                 "Self-Learner",
               ],

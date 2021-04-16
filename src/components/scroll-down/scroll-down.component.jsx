@@ -23,7 +23,7 @@ const ScrollDownComponent = () => {
   return (
     <MyScroll>
       <div className="turn">
-        <span> &gt; </span>
+        <a href="#about"><span> &gt; </span></a>
       </div>
     </MyScroll>
   );
