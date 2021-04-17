@@ -1,100 +1,104 @@
 import React from "react";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import Image from "react-bootstrap/Image";
-import Button from "react-bootstrap/Button";
-import Profile from "../../assets/img/profile/profile.jpg";
-import "./about.styles.css";
+import { Container, Row, Col, Image, ListGroup } from "react-bootstrap";
+import styled from "styled-components";
+import profilePic from "../../assets/img/about/profile-pic-1.jpg";
 
-const AboutComponent = () => {
-  return (
-    <div id="about">
-      <div className="about">
-        <h1 className="pt-3 text-center font-details pb-3">ABOUT ME</h1>
-        <Container>
-          <Row className="pt-3 pb-5 align-items-center">
-            <Col xs={12} md={6}>
-              <Row className="justify-content-center mb-2 mr-2 ">
-                <Image
-                  className="profile justify-content-end"
-                  alt="profile"
-                  src={Profile}
-                  thumbnail
-                  fluid
-                  rounded
-                />
-              </Row>
-            </Col>
-            <Col xs={12} md={6}>
-              <Row className=" align-items-start p-2 my-details rounded">
-                Hi there! I am <strong>&nbsp;Mayur Mule</strong>
-                <br />A passionate programmer and a Coach, born and brought up
-                in India. I am a Full Stack Web Developer with React.js, Redux,
-                Express.js, Node.js, and PostgreSQL as my tech stack.
-                <br />
-                In 2019, I successfully completed my Engineering with
-                specialization in 'Electronics and Telecommunication'.
-                <br />
-                Working with the clients, my goal is always driven towards
-                providing amazing experience with the best level of quality and
-                service to them.
-                <br />
-                Along with that, I also help people as a COACH on their journey
-                of becoming a professional programmer.
-                <br />I love learning about new technologies, what problems are
-                they solving and How can I use them to build better and scalable
-                products.
-                <br /> <br />
-                <Col className="d-flex justify-content-center flex-wrap">
-                  <div>
-                    <a href="#contact">
-                      <Button className="m-2" variant="outline-primary">
-                        Let's talk
-                      </Button>
-                    </a>
-                  </div>
-                  <div>
-                    <a
-                      href="https://drive.google.com/file/d/1Snbq3x4Itk_ZN4c8J96aNdp4SunXR08Y/view?usp=sharing"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <Button className="m-2" variant="outline-success">
-                        My Resume
-                      </Button>
-                    </a>
-                  </div>
-                  <div>
-                    <a
-                      href="https://github.com/akjha96"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <Button className="m-2" variant="outline-dark">
-                        GitHub
-                      </Button>
-                    </a>
-                  </div>
-                  <div>
-                    <a
-                      href="https://www.linkedin.com/in/anand-kumar-jha-745798a4/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <Button className="m-2" variant="outline-info">
-                        LinkedIn
-                      </Button>
-                    </a>
-                  </div>
-                </Col>
-              </Row>
-            </Col>
-          </Row>
-        </Container>
-      </div>
-    </div>
-  );
-};
+const StyledDiv = styled.div`
+  .container-fluid {
+    font-size: 1.1rem;
+  }
+
+  .profile-pic {
+    width: 100%;
+    max-width: 15rem;
+    height: auto;
+  }
+
+  ul {
+    padding-left: 1rem;
+  }
+
+  .list-group-item {
+    border: none;
+    padding: 0 1rem 0 0;
+  }
+
+  .fa {
+    font-size: 1.5rem;
+  }
+`;
+
+const AboutComponent = () => (
+  <>
+    <StyledDiv>
+      <Container fluid className="p-3">
+        <Row className="p-3">
+          <Col>
+            <h1 className="section-heading text-center">
+              <span className="underline">&nbsp;ABOUT ME&nbsp;</span>
+            </h1>
+          </Col>
+        </Row>
+        <Row className="align-items-start p-3">
+          <Col md={3} className="text-center p-4">
+            <Image className="profile-pic" alt="Profile Pic" src={profilePic} thumbnail fluid rounded roundedCircle />
+          </Col>
+          <Col md={5} className="p-4">
+            <h4>Hi, It's me!</h4>
+            <p>
+              I like building awesome software. I've built websites, browser plugins, corporate software and even games!
+              If you are interested, you can view some of my favorite projects in my <a href="#portfolio">portfolio</a>{" "}
+              down below.
+            </p>
+            <p>
+              Need something built or simply want to have chat? Reach out to me on social media or send me an{" "}
+              <a href="#contact">email</a>.
+            </p>
+            <ListGroup horizontal>
+              <ListGroup.Item>
+                <a href="https://www.linkedin.com/in/mayur-mule" title="LinkedIn" target="_blank" rel="noreferrer">
+                  <i className="fa fa-linkedin"></i>
+                </a>
+              </ListGroup.Item>
+              <ListGroup.Item>
+                <a href="https://www.github.com/mayur1711" title="Github" target="_blank" rel="noreferrer">
+                  <i className="fa fa-github"></i>
+                </a>
+              </ListGroup.Item>
+              <ListGroup.Item>
+                <a href="https://www.facebook.com/mayur.mule.142" title="Facebook" target="_blank" rel="noreferrer">
+                  <i className="fa fa-facebook"></i>
+                </a>
+              </ListGroup.Item>
+              <ListGroup.Item>
+                <a href="https://www.instagram.com/" title="Instagram" target="_blank" rel="noreferrer">
+                  <i className="fa fa-instagram"></i>
+                </a>
+              </ListGroup.Item>
+            </ListGroup>
+          </Col>
+          <Col md={4} className="p-4">
+            <h4>My personal interests</h4>
+            <p>
+              When I am not <a href="#skills">coding</a> my next project, I enjoy spending my time doing any of the
+              following:
+            </p>
+            <ul>
+              <li>
+                I love <strong>learning Korean</strong>;
+              </li>
+              <li>
+                am watching my favorite <strong>eSports</strong> games;
+              </li>
+              <li>
+                And I am <strong>meeting more people</strong> and creating new opportunities.
+              </li>
+            </ul>
+          </Col>
+        </Row>
+      </Container>
+    </StyledDiv>
+  </>
+);
 
 export default AboutComponent;

@@ -1,6 +1,5 @@
 import React from "react";
-import Navbar from "react-bootstrap/Navbar";
-import Nav from "react-bootstrap/Nav";
+import { Navbar, Nav } from "react-bootstrap";
 import styled from "styled-components";
 import Scrollspy from "react-scrollspy";
 
@@ -29,28 +28,17 @@ const StyledDiv = styled.div`
 
 const NavbarComponent = () => {
   return (
-    <div id="navbar">
+    <>
       <StyledDiv>
-        <Navbar
-          fixed="top"
-          variant="dark"
-          expand="md"
-          className={`justify-content-between`}
-        >
+        <Navbar fixed="top" variant="dark" expand="md" className="justify-content-between">
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Scrollspy
-              items={[
-                "home",
-                "about",
-                "skills",
-                "experience",
-                "projects",
-                "contact",
-              ]}
+              items={["home", "about", "skills", "experience", "projects", "contact"]}
               currentClassName="active"
               className="navbar-nav m-auto"
               componentTag="div"
+              offset={-300}
             >
               <Nav.Link href="#home">Home</Nav.Link>
               <Nav.Link href="#about">About</Nav.Link>
@@ -62,7 +50,7 @@ const NavbarComponent = () => {
           </Navbar.Collapse>
         </Navbar>
       </StyledDiv>
-    </div>
+    </>
   );
 };
 
