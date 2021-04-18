@@ -24,6 +24,24 @@ const StyledDiv = styled.div`
   img {
     width: 3rem;
   }
+
+  @media (min-width: 576px) {
+    .card-columns {
+      column-count: 1;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .card-columns {
+      column-count: 2;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .card-columns {
+      column-count: 3;
+    }
+  }
 `;
 
 const SkillsComponent = () => (
@@ -38,12 +56,12 @@ const SkillsComponent = () => (
           </Col>
         </Row>
         <Row className="p-3">
-          <Col>
+          <Col className="px-4">
             <CardColumns>
               {skills
                 .sort((a, b) => a.position - b.position)
                 .map((skill, index) => (
-                  <Card className="mt-3" key={index}>
+                  <Card className="mt-4" key={index}>
                     <Card.Body>
                       <Card.Title className="p-2">{skill.name}</Card.Title>
                       <hr />

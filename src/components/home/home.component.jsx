@@ -9,10 +9,9 @@ const StyledDiv = styled.div`
     background: url(${slide}) no-repeat #3f3f3f;
     background-size: cover;
     background-position: center center;
-    background-repeat: ;
     color: #faf550;
     text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
-    letter-spacing: 7px;
+    letter-spacing: 0.4rem;
   }
 
   .primary-text {
@@ -21,7 +20,7 @@ const StyledDiv = styled.div`
 
   .secondary-text {
     font-size: 1.7rem;
-    letter-spacing: 2px;
+    letter-spacing: 0.2rem;
   }
 
   .underline {

@@ -1,58 +1,125 @@
 import React from "react";
-import Container from "react-bootstrap/Container";
-import Jumbotron from "react-bootstrap/Jumbotron";
-import Card from "react-bootstrap/Card";
-import L_ACCENTURE from "../../assets/img/experience/accenture-3.svg";
-import Tilt from "react-tilt";
-import "./experience.styles.css";
+import { Container, Row, Col, Card } from "react-bootstrap";
+import Tilt from "react-parallax-tilt";
+import styled from "styled-components";
+import LOGO_ACCENTURE from "../../assets/img/experience/accenture-3.svg";
+import BG_ACCENTURE from "../../assets/img/experience/accenture-logo.png";
 
-const Experience = () => {
-  return (
-    <div id="experience">
-      <h1 className="pt-3 text-center font-details-b pb-3">EXPERIENCE</h1>
-      <Jumbotron className="jumbo-style">
-        <Container>
-          <Tilt options={{ max: 10 }}>
-            <Card>
-              <Card.Header as="h5" className="d-flex justify-content-center flex-wrap">
-                <Card.Img variant="top" className="img-resize" src={L_ACCENTURE} alt="Accenture logo" />
-              </Card.Header>
-              <Card.Body className="d-flex justify-content-center flex-column">
-                <div>
+const StyledDiv = styled.div`
+  .container-fluid {
+    font-size: 1.1rem;
+  }
+
+  .img-resize {
+    width: 10rem;
+  }
+
+  .style {
+    font-size: 1.25rem;
+  }
+
+  .jumbotron {
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(${BG_ACCENTURE}) no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .body-title-style {
+    font-size: 1.5rem;
+    font-weight: 800;
+  }
+
+  .parallax-effect {
+    transform-style: preserve-3d;
+  }
+
+  .card {
+    transform: translateZ(60px);
+    background: none;
+    border: none;
+  }
+
+  .card-header,
+  .card-body {
+    background: none;
+    border: none;
+  }
+
+  @media (min-width: 992px) {
+    .jumbotron {
+      width: 85% !important;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .jumbotron {
+      width: 75% !important;
+    }
+  }
+`;
+
+const Experience = () => (
+  <>
+    <StyledDiv>
+      <Container fluid className="p-3">
+        <Row className="p-3">
+          <Col>
+            <h1 className="section-heading text-center">
+              <span className="underline">&nbsp;EXPERIENCE&nbsp;</span>
+            </h1>
+          </Col>
+        </Row>
+        <Row className="p-3">
+          <Col className="p-3 d-flex justify-content-center">
+            <Tilt
+              className="jumbotron parallax-effect p-0"
+              tiltMaxAngleX={10}
+              tiltMaxAngleY={10}
+              perspective={2000}
+              transitionSpeed={1500}
+              scale={1.1}
+              gyroscope={true}
+            >
+              <Card>
+                <Card.Header as="h5" className="text-center flex-wrap">
+                  <Card.Img variant="top" className="img-resize" src={LOGO_ACCENTURE} alt="Accenture logo" />
+                </Card.Header>
+                <Card.Body className="d-flex justify-content-center flex-column">
                   <Card.Title className="text-center">Associate Software Engineer</Card.Title>
-                </div>
-                <div>
                   <Card.Text className="text-center style">
                     <strong className="body-title-style ">Full Stack Developer</strong>
                     <br />
                     <strong>Technology:</strong> React JS, DOTNET, C#, MS-SQL, Python
                     <br />
                     <strong>Duration:</strong> June 2019 - Present
-                    <br/>
+                    <br />
                     <strong> Description </strong>
                     <ul className="text-left">
-                      <li><strong>Developed &amp; enhanced</strong> multiple features with customizability option across web application.</li>
-                      <li><strong>Developed</strong> automation system to create SQL bulk query scripts that 
-                        increased efficiency by 80% and decreased working hours from 4 hours to 30 mins per task.
+                      <li>
+                        <strong>Developed &amp; enhanced</strong> multiple features with customizability option across
+                        web application.
                       </li>
-                      <li><strong>Provided</strong> application maintenance while working as `Production Support`. 
+                      <li>
+                        <strong>Developed</strong> automation system to create SQL bulk query scripts that increased
+                        efficiency by 80% and decreased working hours from 4 hours to 30 mins per task.
                       </li>
-                      <li><strong>Performed</strong> CRUD operations on multiple databases to load/ remove data according 
-                      to the business requirements.</li>
-                      {/* <li><strong>Co-created</strong> React Document used as a guide for new developers.</li> */}
-
+                      <li>
+                        <strong>Provided</strong> application maintenance while working as `Production Support`.
+                      </li>
+                      <li>
+                        <strong>Performed</strong> CRUD operations on multiple databases to load/ remove data according
+                        to the business requirements.
+                      </li>
                     </ul>
-                    
-                    
                   </Card.Text>
-                </div>
-              </Card.Body>
-            </Card>
-          </Tilt>
-        </Container>
-      </Jumbotron>
-    </div>
-  );
-};
+                </Card.Body>
+              </Card>
+            </Tilt>
+          </Col>
+        </Row>
+      </Container>
+    </StyledDiv>
+  </>
+);
 
 export default Experience;

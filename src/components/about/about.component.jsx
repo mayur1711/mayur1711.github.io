@@ -47,11 +47,11 @@ const AboutComponent = () => (
             <h4>Hi, It's me!</h4>
             <p>
               I like building awesome software. I've built websites, browser plugins, corporate software and even games!
-              If you are interested, you can view some of my favorite projects in my <a href="#portfolio">portfolio</a>{" "}
+              If you are interested, you can view some of my favorite projects in my <a href="#portfolio">portfolio</a>
               down below.
             </p>
             <p>
-              Need something built or simply want to have chat? Reach out to me on social media or send me an{" "}
+              Need something built or simply want to have chat? Reach out to me on social media or send me an
               <a href="#contact">email</a>.
             </p>
             <ListGroup horizontal>
