@@ -1,22 +1,22 @@
-import LOGO_HTML5 from "../../assets/img/skills/html-5.svg";
+import LOGO_HTML5 from "../../assets/img/skills/html5.svg";
 import LOGO_CSS3 from "../../assets/img/skills/css3.svg";
-import LOGO_BOOTSTRAP from "../../assets/img/skills/bootstrap-4.svg";
+import LOGO_BOOTSTRAP from "../../assets/img/skills/bootstrap.svg";
 import LOGO_REACT from "../../assets/img/skills/react.svg";
 import LOGO_REDUX from "../../assets/img/skills/redux.svg";
-import LOGO_NODE_JS from "../../assets/img/skills/nodejs.svg";
-import LOGO_EXPRESS from "../../assets/img/skills/express.svg";
-import LOGO_MONGODB from "../../assets/img/skills/mongodb.svg";
-import LOGO_MSSQL from "../../assets/img/skills/mssql.svg";
-import LOGO_MYSQL from "../../assets/img/skills/mysql.svg";
-import LOGO_GIT from "../../assets/img/skills/git-icon.svg";
+import LOGO_NODE_JS from "../../assets/img/skills/nodejs.jpg";
+import LOGO_EXPRESS from "../../assets/img/skills/express.jpg";
+import LOGO_MONGODB from "../../assets/img/skills/mongodb.jpg";
+import LOGO_MSSQL from "../../assets/img/skills/mssql.jpg";
+import LOGO_MYSQL from "../../assets/img/skills/mysql.jpg";
+import LOGO_GIT from "../../assets/img/skills/git.svg";
 import LOGO_TFVC from "../../assets/img/skills/tfvc.svg";
 import LOGO_JAVASCRIPT from "../../assets/img/skills/javascript.svg";
 import LOGO_TYPESCRIPT from "../../assets/img/skills/typescript.svg";
 import LOGO_PYTHON from "../../assets/img/skills/python.svg";
-import LOGO_JAVA from "../../assets/img/skills/java-1.svg";
-import LOGO_CSHARP from "../../assets/img/skills/c-sharp.svg";
+import LOGO_JAVA from "../../assets/img/skills/java.svg";
+import LOGO_CSHARP from "../../assets/img/skills/csharp.svg";
 import LOGO_POWERSHELL from "../../assets/img/skills/powershell.svg";
-import LOGO_SHAREPOINT from "../../assets/img/skills/sharepoint.jpg";
+import LOGO_SHAREPOINT from "../../assets/img/skills/sharepoint.svg";
 import LOGO_ASPNET from "../../assets/img/skills/aspnet.jpg";
 import LOGO_MSBOTFRAMEWORK from "../../assets/img/skills/ms-bot-framework.jpg";
 // import LOGO_GITHUB_PAGES from "../../assets/img/skills/github.svg";
@@ -251,9 +251,9 @@ export const skills = [
       },
       {
         link: "https://dev.botframework.com/",
-        imgAltText: "Microsoft Bot Framework",
+        imgAltText: "MS Bot Framework",
         imgSrc: LOGO_MSBOTFRAMEWORK,
-        skillName: "Microsoft Bot Framework",
+        skillName: "MS Bot Framework",
       },
     ],
   },

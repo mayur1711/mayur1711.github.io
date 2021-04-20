@@ -3,10 +3,10 @@ import { Container, Row, Col, Card } from "react-bootstrap";
 import Tilt from "react-parallax-tilt";
 import styled from "styled-components";
 import LOGO_ACCENTURE from "../../assets/img/experience/accenture-3.svg";
-import BG_ACCENTURE from "../../assets/img/experience/accenture-logo.png";
+import BG_ACCENTURE from "../../assets/img/experience/accenture-logo-2.svg";
 
 const StyledDiv = styled.div`
-  .container-fluid {
+  .container {
     font-size: 1.1rem;
   }
 
@@ -19,7 +19,7 @@ const StyledDiv = styled.div`
   }
 
   .jumbotron {
-    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(${BG_ACCENTURE}) no-repeat;
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(${BG_ACCENTURE}) no-repeat var(--lightest-navy);
     background-size: cover;
     background-position: center center;
   }
@@ -45,6 +45,7 @@ const StyledDiv = styled.div`
     border: none;
   }
 
+  /*
   @media (min-width: 992px) {
     .jumbotron {
       width: 85% !important;
@@ -56,12 +57,13 @@ const StyledDiv = styled.div`
       width: 75% !important;
     }
   }
+  */
 `;
 
 const Experience = () => (
   <>
     <StyledDiv>
-      <Container fluid className="p-3">
+      <Container className="p-3">
         <Row className="p-3">
           <Col>
             <h1 className="section-heading text-center">
@@ -70,7 +72,7 @@ const Experience = () => (
           </Col>
         </Row>
         <Row className="p-3">
-          <Col className="p-3 d-flex justify-content-center">
+          <Col className="p-4 d-flex justify-content-center">
             <Tilt
               className="jumbotron parallax-effect p-0"
               tiltMaxAngleX={10}
@@ -96,19 +98,17 @@ const Experience = () => (
                     <strong> Description </strong>
                     <ul className="text-left">
                       <li>
-                        <strong>Developed &amp; enhanced</strong> multiple features with customizability option across
-                        web application.
+                        <strong>Developed &amp; enhanced</strong> multiple features with customizability option across web application.
                       </li>
                       <li>
-                        <strong>Developed</strong> automation system to create SQL bulk query scripts that increased
-                        efficiency by 80% and decreased working hours from 4 hours to 30 mins per task.
+                        <strong>Developed</strong> automation system to create SQL bulk query scripts that increased efficiency by 80% and decreased
+                        working hours from 4 hours to 30 mins per task.
                       </li>
                       <li>
                         <strong>Provided</strong> application maintenance while working as `Production Support`.
                       </li>
                       <li>
-                        <strong>Performed</strong> CRUD operations on multiple databases to load/ remove data according
-                        to the business requirements.
+                        <strong>Performed</strong> CRUD operations on multiple databases to load/ remove data according to the business requirements.
                       </li>
                     </ul>
                   </Card.Text>

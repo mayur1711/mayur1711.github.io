@@ -6,7 +6,7 @@ import Scrollspy from "react-scrollspy";
 const StyledDiv = styled.div`
   nav {
     font-size: 1.25rem;
-    background-color: #212121;
+    background-color: var(--light-navy);
     box-shadow: 0 2px 4px rgb(0 0 0 / 50%);
     animation: move-down 0.5s ease-in-out;
   }

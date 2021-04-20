@@ -3,18 +3,46 @@
 }
 
 #skills {
-  background-color: #eee;
+  /* background-color: #eee; */
 }
 
 hr {
-  border-top: 2px solid rgb(0 0 0 / 20%);
+  border-top: 2px solid var(--dark-slate);
 }
 
 .section-heading {
-  font-size: 3rem;
-  color: #201c4ef8;
+  font-size: 2.5rem;
+  color: var(--lightest-slate);
+}
+
+.section-heading::after {
+  content: "";
+  display: block;
+  position: relative;
+  top: -5px;
+  width: 100%;
+  height: 1px;
+  margin-left: 20px;
+  background-color: var(--lightest-navy);
 }
 
 .underline {
-  border-bottom: 3px solid #f08b65;
+  border-bottom: 3px solid var(--dark-slate);
+}
+
+a {
+  text-decoration: none;
+  text-decoration-skip-ink: auto;
+  transition: var(--transition);
+  cursor: pointer;
+  color: var(--green);
+}
+
+a:hover {
+  color: var(--green);
+}
+
+::selection {
+  background-color: var(--lightest-navy);
+  color: var(--lightest-slate);
 }

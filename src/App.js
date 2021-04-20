@@ -17,19 +17,19 @@ const App = () => (
       <HomeComponent />
     </section>
 
-    <section id="about" className="px-md-5 py-5">
+    <section id="about" className="py-5">
       <Fade duration={1000}>
         <AboutComponent />
       </Fade>
     </section>
 
-    <section id="skills" className="px-md-5 py-5">
+    <section id="skills" className="py-5">
       <Slide bottom duration={500}>
         <SkillsComponent />
       </Slide>
     </section>
 
-    <section id="experience" className="px-md-5 py-5">
+    <section id="experience" className="py-5">
       <Fade duration={1000}>
         <Experience />
       </Fade>

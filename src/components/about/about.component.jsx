@@ -4,7 +4,7 @@ import styled from "styled-components";
 import profilePic from "../../assets/img/about/profile-pic-1.jpg";
 
 const StyledDiv = styled.div`
-  .container-fluid {
+  .container {
     font-size: 1.1rem;
   }
 
@@ -21,6 +21,7 @@ const StyledDiv = styled.div`
   .list-group-item {
     border: none;
     padding: 0 1rem 0 0;
+    background: none;
   }
 
   .fa {
@@ -31,7 +32,7 @@ const StyledDiv = styled.div`
 const AboutComponent = () => (
   <>
     <StyledDiv>
-      <Container fluid className="p-3">
+      <Container className="p-3">
         <Row className="p-3">
           <Col>
             <h1 className="section-heading text-center">
@@ -46,13 +47,11 @@ const AboutComponent = () => (
           <Col md={5} className="p-4">
             <h4>Hi, It's me!</h4>
             <p>
-              I like building awesome software. I've built websites, browser plugins, corporate software and even games!
-              If you are interested, you can view some of my favorite projects in my <a href="#portfolio">portfolio</a>
-              down below.
+              I like building awesome software. I've built websites, browser plugins, corporate software and even games! If you are interested, you
+              can view some of my favorite projects in my <a href="#portfolio">portfolio</a> down below.
             </p>
             <p>
-              Need something built or simply want to have chat? Reach out to me on social media or send me an
-              <a href="#contact">email</a>.
+              Need something built or simply want to have chat? Reach out to me on social media or send me an <a href="#contact">email</a>.
             </p>
             <ListGroup horizontal>
               <ListGroup.Item>
@@ -80,8 +79,7 @@ const AboutComponent = () => (
           <Col md={4} className="p-4">
             <h4>My personal interests</h4>
             <p>
-              When I am not <a href="#skills">coding</a> my next project, I enjoy spending my time doing any of the
-              following:
+              When I am not <a href="#skills">coding</a> my next project, I enjoy spending my time doing any of the following:
             </p>
             <ul>
               <li>

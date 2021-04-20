@@ -4,12 +4,13 @@ import styled from "styled-components";
 import { skills } from "./skills-data";
 
 const StyledDiv = styled.div`
-  .container-fluid {
+  .container {
     font-size: 1.1rem;
   }
 
   .card {
     transition: transform 0.3s;
+    background: var(--lightest-navy);
   }
 
   .card:hover {
@@ -19,6 +20,11 @@ const StyledDiv = styled.div`
 
   .card-title {
     font-size: 2rem;
+    color: var(--light-slate);
+  }
+
+  .card-text a {
+    color: var(--slate) !important;
   }
 
   img {
@@ -47,7 +53,7 @@ const StyledDiv = styled.div`
 const SkillsComponent = () => (
   <>
     <StyledDiv>
-      <Container fluid className="p-3">
+      <Container className="p-3">
         <Row className="p-3">
           <Col>
             <h1 className="section-heading text-center">
@@ -61,7 +67,7 @@ const SkillsComponent = () => (
               {skills
                 .sort((a, b) => a.position - b.position)
                 .map((skill, index) => (
-                  <Card className="mt-4" key={index}>
+                  <Card className="mt-4 mb-0" key={index}>
                     <Card.Body>
                       <Card.Title className="p-2">{skill.name}</Card.Title>
                       <hr />
