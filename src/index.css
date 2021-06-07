@@ -1,45 +1,7 @@
-html {
-  scroll-behavior: smooth;
-}
-body {
-  margin: 0px;
-  width: 100%;
-  min-height: 100%;
-  overflow-x: hidden;
-  -webkit-font-smoothing: antialiased;
-  background-color: var(--navy);
-  color: var(--slate);
-  font-family: var(--font-sans);
-  font-size: var(--fz-md);
-  line-height: 1.3;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
-}
-
-@media (max-width: 576px) {
-  html {
-    font-size: 12px;
-  }
-}
-
-@media (min-width: 576px) {
-  html {
-    font-size: 14px;
-  }
-}
-
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
-
 :root {
-  --dark-navy: #020c32;
+  --dark-navy: #020c1b;
   --navy: #0a192f;
-  --light-navy: #112240;
+  --light-navy: #0d2c5a;
   --lightest-navy: #233554;
   --navy-shadow: rgba(2, 12, 27, 0.7);
   --dark-slate: #495670;
@@ -47,10 +9,11 @@ code {
   --light-slate: #a8b2d1;
   --lightest-slate: #ccd6f6;
   --white: #e6f1ff;
-  --green: #64ffda;
-  --green-tint: rgba(100, 255, 218, 0.1);
-  --font-sans: "Calibre", "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
-  --font-mono: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  --green: var(--cyan);
+  --light-green: #64ffda;
+  --green-tint: rgba(23 162 184 /10%);
+  --font-sans: "Roboto", -apple-system, system-ui, sans-serif;
+  --font-mono: "Roboto Mono", monospace;
   --fz-xxs: 12px;
   --fz-xs: 13px;
   --fz-sm: 14px;
@@ -58,7 +21,9 @@ code {
   --fz-lg: 18px;
   --fz-xl: 20px;
   --fz-xxl: 22px;
-  --fz-heading: 32px;
+  --fz-xxxl: 24px;
+  --fz-header-1: 28px;
+  --fz-header-2: 20px;
   --border-radius: 4px;
   --nav-height: 100px;
   --nav-scroll-height: 70px;
@@ -66,9 +31,31 @@ code {
   --tab-width: 120px;
   --easing: cubic-bezier(0.645, 0.045, 0.355, 1);
   --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-  --hamburger-width: 30px;
-  --ham-before: top 0.1s ease-in 0.25s, opacity 0.1s ease-in;
-  --ham-before-active: top 0.1s ease-out, opacity 0.1s ease-out 0.12s;
-  --ham-after: bottom 0.1s ease-in 0.25s, transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
-  --ham-after-active: bottom 0.1s ease-out, transform 0.22s cubic-bezier(0.215, 0.61, 0.355, 1) 0.12s;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: var(--fz-lg);
+}
+
+@media (max-width: 576px) {
+  html {
+    font-size: var(--fz-md);
+  }
+}
+
+body {
+  margin: 0px;
+  width: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--light);
+  color: var(--dark-slate);
+  font-family: var(--font-sans);
+  line-height: 1.4;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }

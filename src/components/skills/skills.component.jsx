@@ -18,8 +18,12 @@ const StyledDiv = styled.div`
     z-index: 10;
   }
 
+  .card:hover .card-title {
+    color: var(--green);
+  }
+
   .card-title {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: var(--light-slate);
   }
 
@@ -56,9 +60,7 @@ const SkillsComponent = () => (
       <Container className="p-3">
         <Row className="p-3">
           <Col>
-            <h1 className="section-heading text-center">
-              <span className="underline">&nbsp;TECHNICAL SKILLS&nbsp;</span>
-            </h1>
+            <h1 className="header-1 text-center">Technical Skills</h1>
           </Col>
         </Row>
         <Row className="p-3">
@@ -74,12 +76,7 @@ const SkillsComponent = () => (
                       <Card.Text className="card-text d-flex flex-column">
                         {skill.array.map((skill, index) => (
                           <span className="p-2" key={index}>
-                            <a
-                              className="text-dark text-decoration-none"
-                              href={skill.link}
-                              target="_blank"
-                              rel="noreferrer"
-                            >
+                            <a className="text-dark text-decoration-none" href={skill.link} target="_blank" rel="noreferrer">
                               <Image src={skill.imgSrc} alt={skill.imgAltText} rounded className="my-1 ml-1 mr-3" />
                               {skill.skillName}
                             </a>

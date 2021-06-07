@@ -1,85 +1,69 @@
 import React from "react";
-import { Jumbotron, Container } from "react-bootstrap";
 import styled from "styled-components";
-import Typewriter from "typewriter-effect";
-import slide from "../../assets/img/home/slide-1.jpg";
-
-const StyledDiv = styled.div`
-  .jumbotron {
-    background: inherit;
-    color: #faf550;
-    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
-    letter-spacing: 0.4rem;
-  }
-
-  .primary-text {
-    font-size: 3rem;
-  }
-
-  .secondary-text {
-    font-size: 1.7rem;
-    letter-spacing: 0.2rem;
-  }
-
-  .underline {
-    border-bottom: 1px solid #faf550;
-  }
-
-  .bounce {
-    animation: bounce 2s infinite;
-    -moz-animation: bounce 2s infinite;
-    -webkit-animation: bounce 2s infinite;
-  }
-
-  .bounce a {
-    color: #ddd;
-    text-decoration: none;
-  }
-
-  @keyframes bounce {
-    0%,
-    20%,
-    50%,
-    80%,
-    100% {
-      transform: translateY(0);
-    }
-    40% {
-      transform: translateY(-30px);
-    }
-    60% {
-      transform: translateY(-15px);
-    }
-  }
-`;
 
 const HomeComponent = () => (
   <>
-    <StyledDiv>
-      <Jumbotron fluid className="d-flex align-items-end text-center vh-100 w-100 m-0 p-0">
-        <Container>
-          <div className="primary-text mb-3">
-            <span className="underline pb-3">&nbsp;Mayur Mule&nbsp;</span>
-          </div>
-          <div className="secondary-text">
-            <Typewriter
-              options={{
-                strings: ["Software Engineer", "Full Stack Developer", "SharePoint Developer"],
-                autoStart: true,
-                loop: true,
-                delay: 50,
-              }}
-            />
-          </div>
-          <div className="bounce text-center p-5">
-            <a className="fa fa-arrow-down fa-3x" href="#about">
-              {" "}
-            </a>
-          </div>
-        </Container>
-      </Jumbotron>
-    </StyledDiv>
+    <Styles>
+      <div>
+        <h6>Hi, my name is</h6>
+      </div>
+      <div>
+        <h1>Mayur Mule.</h1>
+      </div>
+      <div>
+        <h2>Lorem ipsum dolor sit amet.</h2>
+      </div>
+      <div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tempor auctor diam et varius. Nam quis sagittis lacus. Mauris
+          nec vestibulum metus, eu feugiat ante. Nunc nec ligula dapibus, efficitur lectus at, rutrum turpis. Sed iaculis
+        </p>
+      </div>
+      <div>
+        <a href="mailto:mayur17111996@gmail.com" class="btn">
+          Reach Out
+        </a>
+      </div>
+    </Styles>
   </>
 );
+
+const Styles = styled.div`
+  h6 {
+    margin: 0px 0px 25px 0px;
+    font-family: var(--font-mono);
+    font-weight: 400;
+    color: var(--green);
+  }
+
+  h1 {
+    margin: 0px 0px 20px 0px;
+    font-size: clamp(30px, 8vw, 60px);
+    color: var(--light-navy);
+  }
+
+  h2 {
+    margin: 0px 0px 30px 0px;
+    font-size: clamp(25px, 7vw, 55px);
+  }
+
+  p {
+    max-width: 500px;
+    margin: 0px 0px 50px 0px;
+  }
+
+  .btn {
+    padding: 0.5rem 1rem;
+    color: var(--green);
+    border-color: var(--green);
+  }
+
+  .btn:hover,
+  .btn:focus {
+    background-color: var(--green-tint);
+    box-shadow: 0 0 0 0.2rem var(--green-tint);
+    outline: none;
+  }
+`;
 
 export default HomeComponent;

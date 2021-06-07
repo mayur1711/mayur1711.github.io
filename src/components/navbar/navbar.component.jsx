@@ -1,19 +1,61 @@
 import React from "react";
 import { Navbar, Nav } from "react-bootstrap";
 import styled from "styled-components";
-import Scrollspy from "react-scrollspy";
+import logo from "../../assets/logo.png";
 
-const StyledDiv = styled.div`
+const NavbarComponent = () => {
+  return (
+    <Styles>
+      <Navbar fixed="top" expand="md" variant="dark">
+        <Navbar.Brand className="p-0" href="#home">
+          <img src={logo} width="42" alt="logo" />
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="navbar-collapse" />
+        <Navbar.Collapse>
+          <Nav className="ml-auto">
+            <Nav.Link href="#about">
+              <i class="far fa-address-card"></i>&nbsp;About
+            </Nav.Link>
+            <Nav.Link href="#experience">
+              <i class="fas fa-briefcase"></i>&nbsp;Experience
+            </Nav.Link>
+            <Nav.Link href="#projects">
+              <i class="far fa-folder-open"></i>&nbsp;Projects
+            </Nav.Link>
+            <Nav.Link href="#contact">
+              <i class="far fa-address-book"></i>&nbsp;Contact
+            </Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
+    </Styles>
+  );
+};
+
+const Styles = styled.div`
   nav {
-    font-size: 1.25rem;
+    padding: 0.6rem 1.25rem;
+    font-family: var(--font-mono);
+    font-size: var(--fz-sm);
     background-color: var(--light-navy);
     box-shadow: 0 2px 4px rgb(0 0 0 / 50%);
     animation: move-down 0.5s ease-in-out;
+    gap: 10px;
+  }
+
+  .navbar-nav {
+    gap: 5px;
   }
 
   a {
-    margin: 0 0.8rem;
-    color: #fff;
+    margin: 0 0.4rem;
+    color: var(--white) !important;
+  }
+
+  a.active,
+  a:hover,
+  a:focus {
+    color: var(--green) !important;
   }
 
   @keyframes move-down {
@@ -25,33 +67,5 @@ const StyledDiv = styled.div`
     }
   }
 `;
-
-const NavbarComponent = () => {
-  return (
-    <>
-      <StyledDiv>
-        <Navbar fixed="top" variant="dark" expand="md" className="justify-content-between">
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Scrollspy
-              items={["home", "about", "skills", "experience", "projects", "contact"]}
-              currentClassName="active"
-              className="navbar-nav m-auto"
-              componentTag="div"
-              offset={-300}
-            >
-              <Nav.Link href="#home">Home</Nav.Link>
-              <Nav.Link href="#about">About</Nav.Link>
-              <Nav.Link href="#skills">Skills</Nav.Link>
-              <Nav.Link href="#experience">Experience</Nav.Link>
-              <Nav.Link href="#projects">Projects</Nav.Link>
-              <Nav.Link href="#contact">Contact</Nav.Link>
-            </Scrollspy>
-          </Navbar.Collapse>
-        </Navbar>
-      </StyledDiv>
-    </>
-  );
-};
 
 export default NavbarComponent;

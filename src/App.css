@@ -1,48 +1,117 @@
 #app {
-  position: "relative";
+  position: relative;
 }
 
-#skills {
-  /* background-color: #eee; */
+main {
+  width: 100%;
+  max-width: 1600px;
+  min-height: 100vh;
 }
 
-hr {
-  border-top: 2px solid var(--dark-slate);
+main > section {
+  padding: 80px 150px;
 }
 
-.section-heading {
-  font-size: 2.5rem;
-  color: var(--lightest-slate);
+@media (max-width: 1080px) {
+  main > section {
+    padding: 80px 100px;
+  }
 }
 
-.section-heading::after {
+@media (max-width: 768px) {
+  main > section {
+    padding: 80px 50px;
+  }
+}
+
+@media (max-width: 576px) {
+  main > section {
+    padding: 60px 25px;
+  }
+}
+
+.section-container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+#about > .section-container {
+  max-width: 900px;
+}
+
+#experience > .section-container {
+  max-width: 700px;
+}
+
+#contact > .section-container {
+  max-width: 600px;
+}
+
+.dark-section {
+  background-color: #f4f4f4;
+}
+
+.header-1 {
+  text-align: center;
+  font-size: clamp(26px, 5vw, var(--fz-header-1));
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  white-space: nowrap;
+}
+
+.header-1::after {
   content: "";
   display: block;
   position: relative;
-  top: -5px;
+  top: 0px;
   width: 100%;
-  height: 1px;
+  height: 2px;
   margin-left: 20px;
-  background-color: var(--lightest-navy);
+  background-color: var(--lightest-slate);
 }
 
-.underline {
-  border-bottom: 3px solid var(--dark-slate);
+.header-2 {
+  font-size: clamp(18px, 4vw, var(--fz-header-2));
 }
 
 a {
+  /* display: inline-block; */
   text-decoration: none;
   text-decoration-skip-ink: auto;
+  position: relative;
   transition: var(--transition);
   cursor: pointer;
   color: var(--green);
 }
 
-a:hover {
+a:hover,
+a:focus {
   color: var(--green);
 }
 
+:focus {
+  outline: 2px dashed var(--green);
+}
+
 ::selection {
-  background-color: var(--lightest-navy);
-  color: var(--lightest-slate);
+  background-color: var(--white);
+  color: var(--dark-slate);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--dark-slate);
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+hr {
+  border-top: 1px solid var(--dark-slate);
 }
