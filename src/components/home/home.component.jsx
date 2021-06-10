@@ -20,7 +20,7 @@ const HomeComponent = () => (
         </p>
       </div>
       <div>
-        <a href="mailto:mayur17111996@gmail.com" class="btn">
+        <a href="mailto:mayur17111996@gmail.com" className="btn">
           Reach Out
         </a>
       </div>

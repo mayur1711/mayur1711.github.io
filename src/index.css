@@ -9,23 +9,26 @@
   --light-slate: #a8b2d1;
   --lightest-slate: #ccd6f6;
   --white: #e6f1ff;
+  --light-gray: #f4f4f4;
+  --lightest-gray: var(--light);
   --green: var(--cyan);
   --light-green: #64ffda;
   --green-tint: rgba(23 162 184 /10%);
   --font-sans: "Roboto", -apple-system, system-ui, sans-serif;
   --font-mono: "Roboto Mono", monospace;
-  --fz-xxs: 12px;
-  --fz-xs: 13px;
-  --fz-sm: 14px;
-  --fz-md: 16px;
+  --fz-xxs: 13px;
+  --fz-xs: 14px;
+  --fz-sm: 16px;
+  --fz-md: 17px;
   --fz-lg: 18px;
   --fz-xl: 20px;
   --fz-xxl: 22px;
   --fz-xxxl: 24px;
-  --fz-header-1: 28px;
-  --fz-header-2: 20px;
+  --fz-header-1: 30px;
+  --fz-header-2: 28px;
+  --fz-header-3: 26px;
   --border-radius: 4px;
-  --nav-height: 100px;
+  --nav-height: 80px;
   --nav-scroll-height: 70px;
   --tab-height: 42px;
   --tab-width: 120px;
@@ -34,13 +37,13 @@
 }
 
 html {
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
   font-size: var(--fz-lg);
 }
 
 @media (max-width: 576px) {
   html {
-    font-size: var(--fz-md);
+    font-size: var(--fz-sm);
   }
 }
 
@@ -50,10 +53,23 @@ body {
   min-height: 100%;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
-  background-color: var(--light);
+  background-color: var(--lightest-gray);
   color: var(--dark-slate);
   font-family: var(--font-sans);
   line-height: 1.4;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--slate);
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--light-gray);
 }
 
 code {

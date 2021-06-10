@@ -4,9 +4,11 @@ import "./App.css";
 import AboutComponent from "./components/about/about.component";
 import ContactComponent from "./components/contact/contact.component";
 import ExperienceComponent from "./components/experience/experience.component";
+import FooterComponent from "./components/footer/footer.component";
 import HomeComponent from "./components/home/home.component";
 import NavbarComponent from "./components/navbar/navbar.component";
 import ProjectsComponent from "./components/projects/projects.component";
+import SideComponent from "./components/side/side.component";
 
 const App = () => (
   <div id="app">
@@ -54,7 +56,13 @@ const App = () => (
       </section>
     </main>
 
-    <footer className="dark-section"></footer>
+    <footer>
+      <section className="dark-section">
+        <FooterComponent />
+      </section>
+    </footer>
+
+    <SideComponent />
   </div>
 );
 
