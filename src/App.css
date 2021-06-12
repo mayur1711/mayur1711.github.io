@@ -16,6 +16,11 @@ footer > section {
   padding: 15px;
 }
 
+#contact {
+  padding-bottom: 200px;
+  text-align: center;
+}
+
 @media (max-width: 1080px) {
   main > section {
     padding: 100px 100px;
@@ -25,6 +30,10 @@ footer > section {
 @media (max-width: 768px) {
   main > section {
     padding: 80px 50px;
+  }
+
+  #contact {
+    padding-bottom: 150px;
   }
 }
 
@@ -81,8 +90,21 @@ footer > section {
   font-size: clamp(18px, 4vw, var(--fz-xl));
 }
 
+.email-btn {
+  padding: 0.5rem 1rem;
+  color: var(--green);
+  border-color: var(--green);
+}
+
+.email-btn:hover,
+.email-btn:focus {
+  background-color: var(--green-tint);
+  box-shadow: 0 0 0 0.2rem var(--green-tint);
+  outline: none;
+  color: var(--green);
+}
+
 a {
-  /* display: inline-block; */
   text-decoration: none;
   text-decoration-skip-ink: auto;
   position: relative;

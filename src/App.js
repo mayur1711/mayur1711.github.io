@@ -57,7 +57,7 @@ const App = () => (
     </main>
 
     <footer>
-      <section className="dark-section">
+      <section id="footer" className="dark-section">
         <FooterComponent />
       </section>
     </footer>

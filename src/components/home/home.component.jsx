@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import * as constants from "../../constants/constants";
 
 const HomeComponent = () => (
   <>
@@ -20,7 +21,7 @@ const HomeComponent = () => (
         </p>
       </div>
       <div>
-        <a href="mailto:mayur17111996@gmail.com" className="btn">
+        <a href={`mailto:${constants.EMAIL_ID}`} className="email-btn btn">
           Reach Out
         </a>
       </div>
@@ -50,19 +51,6 @@ const Styles = styled.div`
   p {
     max-width: 500px;
     margin: 0px 0px 50px 0px;
-  }
-
-  .btn {
-    padding: 0.5rem 1rem;
-    color: var(--green);
-    border-color: var(--green);
-  }
-
-  .btn:hover,
-  .btn:focus {
-    background-color: var(--green-tint);
-    box-shadow: 0 0 0 0.2rem var(--green-tint);
-    outline: none;
   }
 `;
 

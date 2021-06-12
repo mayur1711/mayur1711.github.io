@@ -1,27 +1,28 @@
 import React from "react";
 import styled from "styled-components";
+import * as constants from "../../constants/constants";
 
 const FooterComponent = () => (
   <Styles>
     <div className="social-links">
       <ul>
         <li>
-          <a href="https://www.linkedin.com/in/mayur-mule" title="LinkedIn" target="_blank" rel="noreferrer">
+          <a href={constants.LINKEDIN_LINK} title="LinkedIn" target="_blank" rel="noreferrer">
             <i className="fa fa-linkedin"></i>
           </a>
         </li>
         <li>
-          <a href="https://www.github.com/mayur1711" title="Github" target="_blank" rel="noreferrer">
+          <a href={constants.GITHUB_LINK} title="Github" target="_blank" rel="noreferrer">
             <i className="fa fa-github"></i>
           </a>
         </li>
         <li>
-          <a href="https://www.facebook.com/mayur.mule.142" title="Facebook" target="_blank" rel="noreferrer">
+          <a href={constants.FB_LINK} title="Facebook" target="_blank" rel="noreferrer">
             <i className="fa fa-facebook"></i>
           </a>
         </li>
         <li>
-          <a href="https://www.instagram.com/" title="Instagram" target="_blank" rel="noreferrer">
+          <a href={constants.INSTA_LINK} title="Instagram" target="_blank" rel="noreferrer">
             <i className="fa fa-instagram"></i>
           </a>
         </li>
