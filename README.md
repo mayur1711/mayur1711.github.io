@@ -24,6 +24,8 @@ Website is designed using React and Bootstrap, and the UI is inspired by Brittan
    ```sh
    npm start
    ```
+   
+<br/>
 
 ## 🚀 Building & Running for Production
 
