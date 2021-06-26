@@ -9,7 +9,7 @@ Website is designed using React and Bootstrap, and the UI is inspired by Brittan
 
 <br/>
 
-[<img alt="demo.jpg" src="output/demo.jpg" />](https://mayurmule.netlify.app)
+[<img alt="my-portfolio-v1-output.jpg" src="output/my-portfolio-v1-output.jpg" />](https://mayurmule.netlify.app)
 
 <br/>
 
