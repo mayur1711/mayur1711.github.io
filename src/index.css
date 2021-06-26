@@ -14,19 +14,19 @@
   --green: var(--cyan);
   --light-green: #64ffda;
   --green-tint: rgba(23 162 184 /10%);
-  --font-sans: "Roboto", -apple-system, system-ui, sans-serif;
-  --font-mono: "Roboto Mono", monospace;
-  --fz-xxs: 13px;
-  --fz-xs: 14px;
-  --fz-sm: 16px;
-  --fz-md: 17px;
+  --font-sans: Calibre, Roboto, -apple-system, system-ui, sans-serif;
+  --font-mono: "SF Mono", "Roboto Mono", monospace;
+  --fz-xxs: 12px;
+  --fz-xs: 13px;
+  --fz-sm: 14px;
+  --fz-md: 16px;
   --fz-lg: 18px;
   --fz-xl: 20px;
   --fz-xxl: 22px;
   --fz-xxxl: 24px;
-  --fz-header-1: 30px;
-  --fz-header-2: 28px;
-  --fz-header-3: 26px;
+  --fz-header-1: 32px;
+  --fz-header-2: 20px;
+  --fz-header-3: 28px;
   --border-radius: 4px;
   --nav-height: 80px;
   --nav-scroll-height: 70px;
@@ -37,13 +37,12 @@
 }
 
 html {
-  /* scroll-behavior: smooth; */
-  font-size: var(--fz-lg);
+  font-size: var(--fz-xl);
 }
 
 @media (max-width: 576px) {
   html {
-    font-size: var(--fz-sm);
+    font-size: var(--fz-lg);
   }
 }
 
@@ -56,7 +55,7 @@ body {
   background-color: var(--lightest-gray);
   color: var(--dark-slate);
   font-family: var(--font-sans);
-  line-height: 1.4;
+  line-height: 1.3;
 }
 
 body::-webkit-scrollbar {

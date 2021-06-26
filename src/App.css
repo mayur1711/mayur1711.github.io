@@ -66,7 +66,7 @@ footer > section {
 
 .header-1 {
   text-align: center;
-  font-size: clamp(26px, 5vw, var(--fz-header-2));
+  font-size: clamp(26px, 5vw, var(--fz-header-1));
   display: flex;
   -webkit-box-align: center;
   align-items: center;
@@ -79,7 +79,7 @@ footer > section {
   content: "";
   display: block;
   position: relative;
-  top: 0px;
+  top: -4px;
   width: 100%;
   height: 2px;
   margin-left: 20px;
@@ -87,17 +87,19 @@ footer > section {
 }
 
 .header-2 {
-  font-size: clamp(18px, 4vw, var(--fz-xl));
+  font-size: var(--fz-xxl);
 }
 
-.email-btn {
+.green-btn {
   padding: 0.5rem 1rem;
-  color: var(--green);
+  color: var(--green) !important;
   border-color: var(--green);
+  font-family: var(--font-mono);
+  font-size: var(--fz-sm);
 }
 
-.email-btn:hover,
-.email-btn:focus {
+.green-btn:hover,
+.green-btn:focus {
   background-color: var(--green-tint);
   box-shadow: 0 0 0 0.2rem var(--green-tint);
   outline: none;
@@ -136,8 +138,4 @@ h6 {
   color: var(--dark-slate);
   font-weight: 600;
   line-height: 1.1;
-}
-
-hr {
-  border-top: 1px solid var(--dark-slate);
 }

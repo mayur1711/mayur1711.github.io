@@ -1,17 +1,19 @@
 import React from "react";
 import { Fade } from "react-reveal";
+import styled from "styled-components";
 import "./App.css";
-import AboutComponent from "./components/about/about.component";
-import ContactComponent from "./components/contact/contact.component";
-import ExperienceComponent from "./components/experience/experience.component";
-import FooterComponent from "./components/footer/footer.component";
-import HomeComponent from "./components/home/home.component";
-import NavbarComponent from "./components/navbar/navbar.component";
-import ProjectsComponent from "./components/projects/projects.component";
-import SideComponent from "./components/side/side.component";
+import AboutComponent from "./components/about.component";
+import ContactComponent from "./components/contact.component";
+import ExperienceComponent from "./components/experience.component";
+import FooterComponent from "./components/footer.component";
+import HomeComponent from "./components/home.component";
+import NavbarComponent from "./components/navbar.component";
+import ProjectsComponent from "./components/projects.component";
+import SideComponent from "./components/side.component";
+import Fonts from "./styles/fonts";
 
 const App = () => (
-  <div id="app">
+  <Styles id="app">
     <header>
       <section id="navbar">
         <NavbarComponent />
@@ -63,7 +65,11 @@ const App = () => (
     </footer>
 
     <SideComponent />
-  </div>
+  </Styles>
 );
+
+const Styles = styled.div`
+  ${Fonts}
+`;
 
 export default App;

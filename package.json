@@ -1,7 +1,16 @@
 {
-  "name": "my-portfolio",
-  "version": "0.1.0",
+  "name": "my-portfolio-v1",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Mayur Mule <mayur17111996@gmail.com>",
+  "license": "ISC",
   "private": true,
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
   "dependencies": {
     "bootstrap": "^4.6.0",
     "react": "^17.0.2",
@@ -10,12 +19,6 @@
     "react-reveal": "^1.2.2",
     "react-scripts": "4.0.3",
     "styled-components": "^5.2.1"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
