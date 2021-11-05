@@ -10,24 +10,25 @@ const AboutComponent = () => (
       &nbsp;&nbsp;About Me
     </h2>
     <Row className="py-4">
-      <Col md={8} className="pr-md-3">
+      <Col md={9} className="pr-md-3">
         <p>
-          I am an incoming graduate student in the Department of Computer Science at the{" "}
+          I am a graduate student at the{" "}
           <a href="https://cs.uic.edu" target="_blank" rel="noreferrer">
-            University of Illinois, Chicago
-          </a>{" "}
-          (Fall 2021).
+            University of Illinois Chicago
+          </a>
+          . I am pursuing my Master's in Computer Science here at UIC. I also work with the Technology Solutions Department at UIC as a
+          Graduate Assistant and provide a helping hand on skills like Node.js, Express.js, MySQL and Jest framework.
         </p>
         <p>
-          Prior to this, I was a Software Engineer at Accenture Solutions, Mumbai where I had worked on a wide variety of tech stacks
+          Prior to this, I was a Software Engineer with Accenture Solutions, India, where I had worked on a wide variety of tech stacks
           including Web Development, SharePoint Development, and .NET Development.
         </p>
         <p>
           I graduated from{" "}
           <a href="https://kjsce.somaiya.edu" target="_blank" rel="noreferrer">
-            K.J. Somaiya College of Engineering
-          </a>
-          , (University of Mumbai) in May 2018 and my major was Electronics and Telecommunication Engineering.
+            K.J. Somaiya College of Engineering, University of Mumbai
+          </a>{" "}
+          in May 2018 and my major was Electronics and Telecommunication Engineering.
         </p>
         <p>Here are a few technologies I've recently worked on:</p>
         <ul>
@@ -39,7 +40,7 @@ const AboutComponent = () => (
           <li>SharePoint</li>
         </ul>
       </Col>
-      <Col md={4} className="pt-5 pt-md-0 pb-3 px-md-3 d-flex justify-content-center">
+      <Col md={3} className="pt-5 pt-md-0 pb-3 px-md-3 d-flex justify-content-center">
         <div className="img-outer-wrap">
           <div className="img-inner-wrap">
             <Image alt="profile picture" src={profilePicture} thumbnail fluid />

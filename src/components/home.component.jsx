@@ -16,8 +16,9 @@ const HomeComponent = () => (
       </div>
       <div>
         <p>
-          I'm a Mumbai-based Software Engineer with a flair for web and full-stack development. I like to stay abreast of the latest
-          technological trends and employ my technical acumen and skills to solve complex and challenging problems related to IT.
+          I'm a graduate student at University of Illinois Chicago. Previously, I worked as a Software Engineer with Accenture Solutions. I
+          like to stay abreast of the latest technological trends and employ my technical acumen and skills to solve complex and challenging
+          problems related to IT.
         </p>
       </div>
       <div>

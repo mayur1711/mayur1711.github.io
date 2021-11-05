@@ -1,5 +1,16 @@
 export const experiences = [
   {
+    company: "Technology Solutions, University of Illinois Chicago",
+    companyAlt: "Technology Solutions, UIC",
+    companyUrl: "https://it.uic.edu/it-community/technology-solutions/",
+    range: "August 2021 - Present",
+    designation: "Graduate Assistant",
+    description: [
+      "Build web applications, utilities and design APIs using Node.js, Express.js and MySQL as backend.",
+      "Write unit test cases using Jest framework and test software applications.",
+    ],
+  },
+  {
     company: "Accenture",
     companyAlt: "Accenture - SE",
     companyUrl: "https://www.accenture.com/",
