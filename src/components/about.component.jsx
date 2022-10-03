@@ -1,7 +1,7 @@
-import React from "react";
-import { Col, Image, Row } from "react-bootstrap";
-import styled from "styled-components";
-import profilePicture from "../assets/profile-pic.jpg";
+import React from 'react';
+import { Col, Image, Row } from 'react-bootstrap';
+import styled from 'styled-components';
+import profilePicture from '../assets/profile-pic.jpg';
 
 const AboutComponent = () => (
   <Styles>
@@ -12,32 +12,36 @@ const AboutComponent = () => (
     <Row className="py-4">
       <Col md={9} className="pr-md-3">
         <p>
-          I am a graduate student at the{" "}
+          I am a graduate student at{' '}
           <a href="https://cs.uic.edu" target="_blank" rel="noreferrer">
-            University of Illinois Chicago
+            The University of Illinois Chicago
+          </a>{' '}
+          pursuing a Master's in Computer Science. I also work as a Full-stack Developer (Graduate Assistant) with the Technology Solutions Department
+          (UIC).
+        </p>
+        <p>
+          I did my Summer 2022 internship with{' '}
+          <a href="https://paypal.com" target="_blank" rel="noreferrer">
+            PayPal
           </a>
-          . I am pursuing my Master's in Computer Science here at UIC. I also work with the Technology Solutions Department at UIC as a
-          Graduate Assistant and provide a helping hand on skills like Node.js, Express.js, MySQL and Jest framework.
+          , where I worked as a Software Engineer Intern. Before joining UIC, I worked as Software Engineer with Accenture (India) for almost three
+          years.
         </p>
         <p>
-          Prior to this, I was a Software Engineer with Accenture Solutions, India, where I had worked on a wide variety of tech stacks
-          including Web Development, SharePoint Development, and .NET Development.
-        </p>
-        <p>
-          I graduated from{" "}
+          I did my Bachelor's from{' '}
           <a href="https://kjsce.somaiya.edu" target="_blank" rel="noreferrer">
-            K.J. Somaiya College of Engineering, University of Mumbai
-          </a>{" "}
-          in May 2018 and my major was Electronics and Telecommunication Engineering.
+            K.J. Somaiya College of Engineering (University of Mumbai)
+          </a>
+          , graduated in May 2018, and my major was Electronics and Telecommunication Engineering.
         </p>
         <p>Here are a few technologies I've recently worked on:</p>
         <ul>
-          <li>JavaScript (ES6+)</li>
-          <li>TypeScript</li>
-          <li>React</li>
-          <li>jQuery</li>
+          <li>JavaScript (ES5+)</li>
           <li>Node.js</li>
-          <li>SharePoint</li>
+          <li>Express.js</li>
+          <li>SQL</li>
+          <li>React</li>
+          <li>Python</li>
         </ul>
       </Col>
       <Col md={3} className="pt-5 pt-md-0 pb-3 px-md-3 d-flex justify-content-center">
@@ -78,7 +82,7 @@ const Styles = styled.div`
 
   .img-outer-wrap::before,
   .img-outer-wrap::after {
-    content: "";
+    content: '';
     display: block;
     position: absolute;
     width: 100%;
@@ -151,7 +155,7 @@ const Styles = styled.div`
   }
 
   li:before {
-    content: "\f0da";
+    content: '\f0da';
     font-family: FontAwesome;
     display: inline-block;
     margin-left: -1.5rem;

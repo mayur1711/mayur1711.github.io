@@ -1,6 +1,6 @@
-import React from "react";
-import styled from "styled-components";
-import * as constants from "../constants/constants";
+import React from 'react';
+import styled from 'styled-components';
+import * as constants from '../constants/constants';
 
 const HomeComponent = () => (
   <>
@@ -16,9 +16,9 @@ const HomeComponent = () => (
       </div>
       <div>
         <p>
-          I'm a graduate student at University of Illinois Chicago. Previously, I worked as a Software Engineer with Accenture Solutions. I
-          like to stay abreast of the latest technological trends and employ my technical acumen and skills to solve complex and challenging
-          problems related to IT.
+          I'm a graduate student at The University of Illinois Chicago. My latest work experience includes working as Software Engineer Intern with
+          PayPal. I like to stay abreast of the latest technological trends and employ my technical skills and knowledge to solve challenging
+          problems.
         </p>
       </div>
       <div>
@@ -52,7 +52,7 @@ const Styles = styled.div`
   }
 
   p {
-    max-width: 500px;
+    max-width: 600px;
     margin: 0px 0px 50px 0px;
   }
 `;
